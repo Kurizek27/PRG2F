@@ -21,6 +21,15 @@ public class Variables_cv {
          * Vypište, Přehoďte, Vypište,
          */
 
+        int a = 25;
+        int b = 48;
+        System.out.println(a);
+        System.out.println(b);
+        int temp = a;
+        a = b;
+        b = temp;
+        System.out.println(a);
+        System.out.println(b);
 
         /**
          * CV 2
@@ -28,16 +37,35 @@ public class Variables_cv {
          * Výsledky vypište na konzoli
          */
 
+
+
         /**
          * CV 3
          * Uložte do proměnné pravdivostního typu, zda součet 3 libovolných malých písmen je větší než 300.
          * Výsledek vypište na konzoli
          */
 
+
+
         /**
          * CV 4
          * Zeptejte se uživatele na jeho, jméno, příjmení, PSČ a rodné číslo
          * Údaje pak uživateli vypište
          */
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Zadej jméno");
+            String jmeno = sc.next();
+        System.out.println("Zadej příjmení");
+            String prijmeni = sc.next();
+        System.out.println("Zadej PSČ");
+            int psc = sc.nextInt();
+        System.out.println("Zadej rodné číslo");
+            String rodnecislo = sc.next();
+        System.out.println(jmeno);
+        System.out.println(prijmeni);
+        System.out.println(psc);
+        System.out.println(rodnecislo);
+
     }
 }
