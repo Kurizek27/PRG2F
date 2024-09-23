@@ -37,7 +37,28 @@ public class Variables_cv {
          * Výsledky vypište na konzoli
          */
 
+Scanner scan = new Scanner(System.in);
+        System.out.println("Zadej Číslo 1");
+            double cislo1 = scan.nextDouble();
+        System.out.println("Zadej operaci");
+            char operace = scan.next().charAt(0);
+        System.out.println("Zadej Číslo 2");
+            double cislo2 = scan.nextDouble();
+        switch (operace) {
+            case '+':
+                System.out.println(cislo1+cislo2);
+                break;
+            case '-':
+                System.out.println(cislo1-cislo2);
+                break;
+            case '*':
+                System.out.println(cislo1*cislo2);
+                break;
+            case '/':
+                System.out.println(cislo1/cislo2);
+                break;
 
+        }
 
         /**
          * CV 3
