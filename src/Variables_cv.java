@@ -69,10 +69,10 @@ public class Variables_cv {
          */
 
         boolean isMore;
-        int a = (int) 'a';
-        int b = (int) 'b';
-        int c = (int) 'c';
-        isMore = a+b+c > 300;
+        int f = (int) 'f';
+        int g = (int) 'g';
+        int h = (int) 'h';
+        isMore = f + g + h > 300;
         System.out.println(isMore);
 
         /**
