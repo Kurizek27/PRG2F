@@ -66,7 +66,12 @@ Scanner scan = new Scanner(System.in);
          * Výsledek vypište na konzoli
          */
 
-
+         boolean isMore;
+        int a = (int) 'a';
+        int b = (int) 'b';
+        int c = (int) 'c';
+        isMore = a+b+c > 300;
+        System.out.println(isMore);
 
         /**
          * CV 4
