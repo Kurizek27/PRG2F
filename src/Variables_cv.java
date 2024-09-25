@@ -71,8 +71,8 @@ public class Variables_cv {
         boolean isMore;
         int f = (int) 'f';
         int g = (int) 'g';
-        int h = (int) 'h';
-        isMore = f + g + h > 300;
+        int i = (int) 'i';
+        isMore = f + g + i > 300;
         System.out.println(isMore);
 
         /**
