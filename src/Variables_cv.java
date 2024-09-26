@@ -96,9 +96,9 @@ Scanner scan = new Scanner(System.in);
 
         Scanner sa = new Scanner(System.in);
         System.out.println("Zadej stranu A");
-        int stra = sc.nextInt();
+        int stra = sa.nextInt();
         System.out.println("Zadej stranu B");
-        int strb = sc.nextInt();
+        int strb = sa.nextInt();
         System.out.println(2*(stra+strb));
 
 
