@@ -67,10 +67,10 @@ Scanner scan = new Scanner(System.in);
          */
 
         boolean isMore;
-        int a = (int) 'a';
-        int b = (int) 'b';
-        int c = (int) 'c';
-        isMore = a+b+c > 300;
+        int d = (int) 'd';
+        int e = (int) 'e';
+        int f = (int) 'f';
+        isMore = d + e + f > 300;
         System.out.println(isMore);
 
         /**
