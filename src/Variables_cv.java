@@ -102,9 +102,10 @@ Scanner scan = new Scanner(System.in);
         System.out.println(2*(stra+strb));
 
 
-        Scanner sb = new Scanner(System.in);
+
         System.out.println("Zadej °C");
-        int celsius = sc.nextInt();
+        double celsius = sc.nextDouble();
+        double F = celsius * (9/5) + 32;
         System.out.println(celsius * 1.8 + 32);
     }
 }
