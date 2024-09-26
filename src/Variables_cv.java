@@ -66,7 +66,7 @@ Scanner scan = new Scanner(System.in);
          * Výsledek vypište na konzoli
          */
 
-         boolean isMore;
+        boolean isMore;
         int a = (int) 'a';
         int b = (int) 'b';
         int c = (int) 'c';
@@ -93,5 +93,18 @@ Scanner scan = new Scanner(System.in);
         System.out.println(psc);
         System.out.println(rodnecislo);
 
+
+        Scanner sa = new Scanner(System.in);
+        System.out.println("Zadej stranu A");
+        int stra = sc.nextInt();
+        System.out.println("Zadej stranu B");
+        int strb = sc.nextInt();
+        System.out.println(2*(stra+strb));
+
+
+        Scanner sb = new Scanner(System.in);
+        System.out.println("Zadej °C");
+        int celsius = sc.nextInt();
+        System.out.println(celsius * 1.8 + 32);
     }
 }
