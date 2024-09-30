@@ -37,8 +37,7 @@ public class Variables_cv {
          * Výsledky vypište na konzoli
          */
 
-
-        Scanner scan = new Scanner(System.in);
+Scanner scan = new Scanner(System.in);
         System.out.println("Zadej Číslo 1");
             double cislo1 = scan.nextDouble();
         System.out.println("Zadej operaci");
@@ -61,7 +60,6 @@ public class Variables_cv {
 
         }
 
-
         /**
          * CV 3
          * Uložte do proměnné pravdivostního typu, zda součet 3 libovolných malých písmen je větší než 300.
@@ -69,10 +67,10 @@ public class Variables_cv {
          */
 
         boolean isMore;
+        int d = (int) 'd';
+        int e = (int) 'e';
         int f = (int) 'f';
-        int g = (int) 'g';
-        int i = (int) 'i';
-        isMore = f + g + i > 300;
+        isMore = d + e + f > 300;
         System.out.println(isMore);
 
         /**
@@ -95,5 +93,19 @@ public class Variables_cv {
         System.out.println(psc);
         System.out.println(rodnecislo);
 
+
+        Scanner sa = new Scanner(System.in);
+        System.out.println("Zadej stranu A");
+        int stra = sa.nextInt();
+        System.out.println("Zadej stranu B");
+        int strb = sa.nextInt();
+        System.out.println(2*(stra+strb));
+
+
+
+        System.out.println("Zadej °C");
+        double celsius = sc.nextDouble();
+        double F = celsius * (1.8) + 32;
+        System.out.println(F);
     }
 }
