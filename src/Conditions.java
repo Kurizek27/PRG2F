@@ -53,13 +53,24 @@ public class Conditions {
         int vek = sc.nextInt();
         int cena = 20;
         if (vek < 12 && vek > 70) {
-            System.out.println("Lístek stojí: "+cena*0.6);
+            System.out.println("Lístek stojí: " + cena * 0.6);
         } else if (vek >= 13 && vek <= 18) {
-            System.out.println("Lístek stojí: "+cena*0.8);
+            System.out.println("Lístek stojí: " + cena * 0.8);
+        } else {
+            System.out.println("Lístek stojí: " + cena);
         }
-        else {
-            System.out.println("Lístek stojí: "+cena);
+        System.out.println("Cviceni 5");
+        int m2 = 640;
+        int width = sc.nextInt();
+        int height = sc.nextInt();
+        int budget = sc.nextInt();
+        int vysledek = (width*height)*m2;
+        if (budget % vysledek == 0) {
+            System.out.println("Zakaznik si muze dovolit pozemek");
+        } else {
+            System.out.println("Zakaznik si nemuze dovolit pozemek");
         }
+
     }
 }
 
