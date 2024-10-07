@@ -41,9 +41,8 @@ public class Conditions {
             System.out.println("Cislo nespada do intervalu");
         }
         System.out.println("Cviceni 3b");
-        Scanner scanner = new Scanner(System.in);
         System.out.println("Zadej Číslo");
-        int e = scanner.nextInt();
+        int e = sc.nextInt();
         if (e > -100 && e < 100) {
             System.out.println("Cislo nespada do intervalu");
 
