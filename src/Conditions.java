@@ -21,24 +21,44 @@ public class Conditions {
 
         if (b + c >= 10) {
             System.out.println("Vyhral jsi");
-        }
-        else {
-            if (b == c){
+        } else {
+            if (b == c) {
                 System.out.println("Vyhral jsi");
-            }
-            else {System.out.println("Prohral jsi");
+            } else {
+                System.out.println("Prohral jsi");
             }
         }
         System.out.println("Cviceni 3");
 
         Scanner sc = new Scanner(System.in);
         System.out.println("Zadej Číslo");
-        int d = scan.nextInt();
+        int d = sc.nextInt();
         if (d > -100 && d < 100) {
             System.out.println("Cislo spada do intervalu");
+
+        } else {
+            System.out.println("Cislo nespada do intervalu");
+        }
+        System.out.println("Cviceni 3b");
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Zadej Číslo");
+        int e = scanner.nextInt();
+        if (e > -100 && e < 100) {
+            System.out.println("Cislo nespada do intervalu");
+
+        } else {
+            System.out.println("Cislo spada do intervalu");
+        }
+        System.out.println("Cviceni 4");
+        int vek = sc.nextInt();
+        int cena = 20;
+        if (vek < 12 && vek > 70) {
+            System.out.println("Lístek stojí: "+cena*0.6);
+        } else if (vek >= 13 && vek <= 18) {
+            System.out.println("Lístek stojí: "+cena*0.8);
         }
         else {
-            System.out.println("Cislo nespada do intervalu");
+            System.out.println("Lístek stojí: "+cena);
         }
     }
 }
