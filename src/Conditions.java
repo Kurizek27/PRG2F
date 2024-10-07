@@ -34,6 +34,7 @@ public class Conditions {
         System.out.println("Zadej Číslo");
         int d = sc.nextInt();
         if (d > -100 && d < 100) {
+            //&& je and
             System.out.println("Cislo spada do intervalu");
 
         } else {
@@ -52,7 +53,8 @@ public class Conditions {
         System.out.println("Cviceni 4");
         int vek = sc.nextInt();
         int cena = 20;
-        if (vek < 12 && vek > 70) {
+        if (vek < 12 || vek > 70) {
+            // || je nebo
             System.out.println("Lístek stojí: " + cena * 0.6);
         } else if (vek >= 13 && vek <= 18) {
             System.out.println("Lístek stojí: " + cena * 0.8);
@@ -70,6 +72,7 @@ public class Conditions {
         } else {
             System.out.println("Zakaznik si nemuze dovolit pozemek");
         }
+        // !je negace
 
     }
 }
