@@ -4,9 +4,9 @@ import java.util.Scanner;
 public class Conditions {
     public static void main(String[] args) {
         System.out.println("Cviceni 1");
-        Scanner scan = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.println("Zadej Číslo");
-        int a = scan.nextInt();
+        int a = sc.nextInt();
         if (a % 5 == 0) {
             System.out.println("Je delitelne 5ti");
         } else {
@@ -30,7 +30,7 @@ public class Conditions {
         }
         System.out.println("Cviceni 3");
 
-        Scanner sc = new Scanner(System.in);
+
         System.out.println("Zadej Číslo");
         int d = sc.nextInt();
         if (d > -100 && d < 100) {
@@ -66,7 +66,7 @@ public class Conditions {
         int width = sc.nextInt();
         int height = sc.nextInt();
         int budget = sc.nextInt();
-        int vysledek = (width*height)*m2;
+        int vysledek = (width * height) * m2;
         if (budget % vysledek == 0) {
             System.out.println("Zakaznik si muze dovolit pozemek");
         } else {
