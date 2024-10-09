@@ -1,4 +1,3 @@
-import java.sql.SQLOutput;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -27,7 +26,6 @@ public class TestA1 {
         }
         System.out.println("Příklad 3");
         int obednavka = sc.nextInt();
-        int gin = 540;
         if (obednavka <= 5) {
             System.out.println("Cena:" + (obednavka * 540));
         } else if (obednavka >= 6 && obednavka <= 10) {
