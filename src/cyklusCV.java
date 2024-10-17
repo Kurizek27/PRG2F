@@ -39,6 +39,7 @@ public class cyklusCV {
             if(uzivatel % 2 == 0){
                 sudecislo++;
             }
-        } while (uzivatel < 0);
+        } while (uzivatel > 0);
+        System.out.println("Pocet sudych cisel:"+sudecislo);
     }
 }
