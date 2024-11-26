@@ -9,7 +9,6 @@ public class retezce {
         System.out.println(textuzivatele.length());
         for (int swap = 0; swap < textuzivatele.length(); swap++) {
             charakter = textuzivatele.charAt(swap);
-            swapped = charakter + swapped;
         }
     }
 }
