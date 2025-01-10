@@ -17,5 +17,6 @@ public class prgukol2 {
         System.out.println("Vytvořte si heslo");
         String password = sc.nextLine();
         validatePassword(password);
+        
     }
 }
