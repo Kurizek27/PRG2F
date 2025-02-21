@@ -1,5 +1,6 @@
 import java.util.Arrays;
 import java.util.Random;
+import java.util.Scanner;
 
 public class arraysort {
     public static void main(String[] args) {
@@ -118,10 +119,18 @@ public class arraysort {
         for (int i = 0; i < songs.length; i++) {
             System.out.println(songs[i] + " " + ratings[i]);
         }
-        String[] newSongs = Arrays.copyOf(songs, songs.length);
-        newSongs[songs.length - 1] = "Rammstein - Du Riechst So Gut '98";
-        double[] newRatings = Arrays.copyOf(ratings, ratings.length);
-        newRatings[ratings.length - 1] = 4.5;
+        String[] newSongs = Arrays.copyOf(songs, songs.length * 2);
+        double[] newRatings = Arrays.copyOf(ratings, ratings.length * 2);
+        int freeSpace = 100;
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Zadej pisnicku a jeji hodnoceni");
+        String importSound = sc.nextLine();
+        double importRating = sc.nextDouble();
+
+        newSongs[freeSpace] = importSound;
+        newRatings[freeSpace] = importRating;
+        freeSpace++;
 
         for (int i = 0; i < newSongs.length; i++) {
             System.out.println(newSongs[i] + " " + newRatings[i]);
@@ -143,20 +152,9 @@ public class arraysort {
         System.out.println("Nejhorší hodnocení:");
         System.out.println(newSongs[lowestRating] + " " + newRatings[lowestRating]);
 
-        for (int i = 0; i < newRatings.length - 1; i++) {
-            for (int j = 0; j < newRatings.length - i - 1; j++) {
-                if (newRatings[j] < newRatings [j + 1]) {
-                    double temp = newRatings[j];
-                    newRatings[j] = newRatings[j + 1];
-                    newRatings[j + 1] = temp;
-                    String temp2 = newSongs[j];
-                    newSongs[j] = newSongs[j + 1];
-                    newSongs[j + 1] = temp2;
 
-                }
-                System.out.println(newSongs[j] + " " + newRatings[j]);
-            }
 
-        }
+
+
     }
 }
