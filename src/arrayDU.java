@@ -64,10 +64,14 @@ public class arrayDU {
         } while (swap);
     }
     public static void main(String[] args) {
-        pridatPolozku("plozka1", 'A');
-        pridatPolozku("plozka2", 'C');
-        pridatPolozku("plozka3", 'D');
-        pridatPolozku("plozka4", 'B');
+        pridatPolozku("jablicko", 'A');
+        pridatPolozku("hruska", 'C');
+        pridatPolozku("zelenina", 'D');
+        pridatPolozku("pepa", 'B');
+        seraditAZ();
+        for (int i = 0; i <inventory.length; i++) {
+            System.out.println(rarity[i]+"."+inventory[i]);
+        }
 
 
 
