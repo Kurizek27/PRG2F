@@ -1,6 +1,7 @@
+import java.util.Arrays;
+
 public class arrayDU {
-    public static void main(String[] args) {
-        String[] inventory = {
+        static String[] inventory = {
                 "Spitzhacke",
                 "Krankenwagen",
                 "Apache-Hubschrauber 3000",
@@ -34,7 +35,42 @@ public class arrayDU {
                 "Hellseherischer Toaster",
                 "Atom-Schaumbad"
         };
-        char[] rarity = {'C', 'D', 'D', 'D', 'B', 'A', 'D', 'E', 'E', 'E', 'A', 'E', 'D', 'A', 'E', 'D', 'A', 'A', 'D', 'A', 'E', 'D', 'E', 'B', 'C', 'C', 'A', 'B', 'C', 'C', 'E', 'E'};
+    static char[] rarity = {'C', 'D', 'D', 'D', 'B', 'A', 'D', 'E', 'E', 'E', 'A', 'E', 'D', 'A', 'E', 'D', 'A', 'A', 'D', 'A', 'E', 'D', 'E', 'B', 'C', 'C', 'A', 'B', 'C', 'C', 'E', 'E'};
+    static void pridatPolozku(String polozka, char rarita){
+        inventory = Arrays.copyOf(inventory, inventory.length);
+        inventory[inventory.length-1] = polozka;
+
+        rarity = Arrays.copyOf(rarity, rarity.length);
+        rarity[rarity.length-1] = rarita;
+    }
+    static void seraditAZ(){
+        boolean swap;
+        do {
+            swap = false;
+            for (int i = 0; i < inventory.length -1; i++) {
+                if (inventory[i].compareTo(inventory[i+1]) > 0) {
+                    String temp = inventory[i];
+                    inventory[i] = inventory[i+1];
+                    inventory[i+1] = temp;
+
+                    char tmp = rarity[i];
+                    rarity[i] = rarity[i+1];
+                    rarity[i+1] = tmp;
+
+                    swap = true;
+
+                }
+            }
+        } while (swap);
+    }
+    public static void main(String[] args) {
+        pridatPolozku("plozka1", 'A');
+        pridatPolozku("plozka2", 'C');
+        pridatPolozku("plozka3", 'D');
+        pridatPolozku("plozka4", 'B');
+
+
 
     }
+
 }
