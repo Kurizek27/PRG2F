@@ -107,12 +107,12 @@ public class arrayDU {
         pridatPolozku("Pepa", 'B');
         seraditAZ();
         for (int i = 0; i < inventory.length; i++) {
-            System.out.println(rarity[i] + "." + inventory[i]);
+            System.out.println(rarity[i] + " - " + inventory[i]);
         }
         seradaditRare();
 
         for (int i = 0; i < inventory.length; i++) {
-            System.out.println(rarity[i] + "." + inventory[i]);
+            System.out.println(rarity[i] + " - " + inventory[i]);
         }
 
 
