@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class OPAKOVANI {
     static Scanner sc = new Scanner(System.in);
-    public static int Prikad4 (){
+    public static int Priklad4 (){
         System.out.println("Napiš číslo které chceš umocnit");
         int cislo = sc.nextInt();
         System.out.println("Napiš exponent");
@@ -14,26 +14,21 @@ public class OPAKOVANI {
         return cislo;
 
     }
-    public static int Prikad5 (){
+    public static int Priklad5 (){
         int cislo = sc.nextInt();
         for (int i = cislo - 1; i > 0; i--) {
             cislo *= i;
         }
         return cislo;
     }
-    public static int Prikad6 (){
-        int cislo = sc.nextInt();
-        
-        return cislo;
-    }
-    static int fib(int index) {
+    static int Priklad6(int index) {
         if (index == 1 || index == 2) return 1;
-        return fib(index - 2) + fib(index - 1);
+        return Priklad6(index - 2) + Priklad6(index - 1);
     }
     public static void main(String[] args) {
-        System.out.println(Prikad4());
-        System.out.println(Prikad5());
-        System.out.println(Prikad6());
+        System.out.println(Priklad4());
+        System.out.println(Priklad5());
+        System.out.println(Priklad6(sc.nextInt()));
 
         }
     }
