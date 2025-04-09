@@ -22,17 +22,20 @@ public class Main {
             System.out.println("H = Hit, S = End game");
             char choice = scanner.nextLine().charAt(0);
             if (choice == 'H') {
+                Card card = deck.dealCard();
+                total+=card.getValue();
                 myCards.add(deck.dealCard());
                 if (total > 21) {
                     System.out.println("You lose!");
                     playing = false;
-                } else {
+                } else if (total == 21) {
                     playing = false;
+                    System.out.println("You win!");
                 }
                 total = 0;
-                for (Card card : myCards) {
-                    card.printCard();
-                    total += card.getValue();
+                for (Card cardcard : myCards) {
+                    cardcard.printCard();
+                    total += cardcard.getValue();
                 }
                 System.out.println(total);
             } else {
