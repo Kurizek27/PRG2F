@@ -1,4 +1,5 @@
 package BlackJack;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -17,27 +18,39 @@ public class Main {
         }
         System.out.println(total);
         boolean playing = true;
-        while(playing) {
+        while (playing) {
+            System.out.println("H = Hit, S = End game");
             char choice = scanner.nextLine().charAt(0);
             if (choice == 'H') {
                 myCards.add(deck.dealCard());
                 if (total > 21) {
                     System.out.println("You lose!");
                     playing = false;
+                } else {
+                    playing = false;
+                }
+                total = 0;
+                for (Card card : myCards) {
+                    card.printCard();
+                    total += card.getValue();
+                }
+                System.out.println(total);
             } else {
                 playing = false;
             }
-            total = 0;
-            for (Card card : myCards) {
-                card.printCard();
-                total += card.getValue();
-            }
-            System.out.println(total);
         }
-        if (total > 21) {
-            System.out.println("You lose!");
+        if (total <= 21) {
+            System.out.println("Good game my friend");
         } else {
-            System.out.println("You win!");
+            System.out.println("You lost!");
+
         }
+
+        total = 0;
+        for (Card card : myCards) {
+            card.printCard();
+            total += card.getValue();
+        }
+        System.out.println("Tvůj součet je:" + total);
     }
 }
